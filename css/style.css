@@ -1,0 +1,18 @@
+.container {
+  width: 100%;
+  max-width: 1205px;
+}
+
+header {
+  background-color: #550FED;
+}
+header .nav {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: center;
+}
+header img {
+  width: 232px;
+  height: 60px;
+}/*# sourceMappingURL=style.css.map */
