@@ -12,7 +12,81 @@ header .nav {
   justify-content: space-between;
   align-items: center;
 }
+header nav ul {
+  display: flex;
+  gap: 72px;
+  justify-content: center;
+  align-items: center;
+}
+header nav ul a {
+  color: #C8C206;
+}
+header nav ul a:hover {
+  color: #1E1E1E;
+}
+header .search {
+  width: 100%;
+  max-width: 843px;
+  margin: 0 auto;
+  padding: 100px 64px;
+}
+header .search h2 {
+  color: #F2F4F5;
+}
+header .search form {
+  background-color: white;
+  border-radius: 8px;
+}
 header img {
   width: 232px;
   height: 60px;
+}
+
+main {
+  background-color: #F2F4F5;
+}
+main h1 {
+  padding-top: 60px;
+  max-width: 584px;
+  padding-bottom: 32px;
+}
+main .state .tag {
+  padding: 8px;
+  border-radius: 8px;
+  color: #550FED;
+  background-color: #CCB7F9;
+  display: inline-block;
+  margin-bottom: 24px;
+}
+main .state .cards {
+  display: flex;
+  gap: 36px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 60px;
+}
+main .state .cards .card {
+  border-radius: 8px;
+  border: 1px solid #C8C206;
+  overflow: hidden;
+}
+main .state .cards .card .card-content {
+  padding: 24px;
+  background-color: white;
+}
+main .state .cards .card .card-content p:first-child {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+main .state .cards .card .card-content p:nth-child(2) {
+  margin-bottom: 24px;
+  color: #716C7C;
+}
+main .state .cards .card .card-content a {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+main .state .cards .card .card-content a span {
+  color: #550FED;
+  margin-right: 16px;
 }/*# sourceMappingURL=style.css.map */
