@@ -1,9 +1,23 @@
 @use 'variables' as var;
 @use 'mixins' as mx; 
 
+body{
+    background-color: var.$background;
+}
+
 .container{
     width: 100%;
     max-width: var.$container;
+    margin: 0 auto;
+}
+
+.tag{
+    padding: 8px;
+    border-radius: 8px;
+    color: var.$primary-color;
+    background-color: var.$secondary-color;
+    display: inline-block;
+    margin-bottom: 24px;
 }
 
 header{
@@ -50,7 +64,7 @@ header{
 }
 
 main{
-    background-color: var.$background;
+
     h1{
         padding-top: 60px;
         max-width: 584px;
@@ -58,14 +72,7 @@ main{
     }
 
     .state{
-        .tag{
-            padding: 8px;
-            border-radius: 8px;
-            color: var.$primary-color;
-            background-color: var.$secondary-color;
-            display: inline-block;
-            margin-bottom: 24px;
-        }
+       
 
         .cards{
             @include mx.displayFlex(36px, center);
@@ -102,5 +109,71 @@ main{
                 }
             }
         }
+    }
+}
+
+.banner{
+    background-image: url('../images/barra.png');
+    background-repeat: no-repeat;
+    height: 320px;
+    background-position: center top;
+
+    .container{
+        @include mx.displayFlex(0, flex-start);
+        height: 320px;
+    }
+
+    .spacing{
+        height: 100px;
+        width: 602px;
+    }
+
+    .content{
+        width: 100%;
+        max-width: 420px;
+
+        .tag{
+            margin-bottom: 8px;
+        }
+
+        h3{
+            font-size: 4rem;
+            font-weight: 500;
+        }
+    }
+}
+
+.overview{
+    margin-top: 96px;
+    
+    h3{
+        font-size: 3.2rem;
+        margin-bottom: 32px;
+    }
+
+    .content{
+        background-color: white;
+        border: 1px solid var.$border;
+        border-radius: 8px;
+        padding: 54px;
+
+        .items{
+            @include mx.displayFlex(100px, space-evenly);
+            text-align: center;
+
+            .item{
+                p:first-child{
+                    font-weight: bold;
+                    margin-bottom: 4px;
+                }
+
+                p:nth-child(2){
+                    font-size: 2.4rem;
+                    color: var.$gray;
+                }
+            }
+        }
+
+
     }
 }

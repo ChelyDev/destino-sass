@@ -1,6 +1,20 @@
+body {
+  background-color: #F2F4F5;
+}
+
 .container {
   width: 100%;
   max-width: 1205px;
+  margin: 0 auto;
+}
+
+.tag {
+  padding: 8px;
+  border-radius: 8px;
+  color: #550FED;
+  background-color: #CCB7F9;
+  display: inline-block;
+  margin-bottom: 24px;
 }
 
 header {
@@ -42,21 +56,10 @@ header img {
   height: 60px;
 }
 
-main {
-  background-color: #F2F4F5;
-}
 main h1 {
   padding-top: 60px;
   max-width: 584px;
   padding-bottom: 32px;
-}
-main .state .tag {
-  padding: 8px;
-  border-radius: 8px;
-  color: #550FED;
-  background-color: #CCB7F9;
-  display: inline-block;
-  margin-bottom: 24px;
 }
 main .state .cards {
   display: flex;
@@ -89,4 +92,62 @@ main .state .cards .card .card-content a {
 main .state .cards .card .card-content a span {
   color: #550FED;
   margin-right: 16px;
+}
+
+.banner {
+  background-image: url("../images/barra.png");
+  background-repeat: no-repeat;
+  height: 320px;
+  background-position: center top;
+}
+.banner .container {
+  display: flex;
+  gap: 0;
+  justify-content: flex-start;
+  align-items: center;
+  height: 320px;
+}
+.banner .spacing {
+  height: 100px;
+  width: 602px;
+}
+.banner .content {
+  width: 100%;
+  max-width: 420px;
+}
+.banner .content .tag {
+  margin-bottom: 8px;
+}
+.banner .content h3 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.overview {
+  margin-top: 96px;
+}
+.overview h3 {
+  font-size: 3.2rem;
+  margin-bottom: 32px;
+}
+.overview .content {
+  background-color: white;
+  border: 1px solid #C8C206;
+  border-radius: 8px;
+  padding: 54px;
+}
+.overview .content .items {
+  display: flex;
+  gap: 100px;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.overview .content .items .item p:first-child {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.overview .content .items .item p:nth-child(2) {
+  font-size: 2.4rem;
+  color: #716C7C;
 }/*# sourceMappingURL=style.css.map */
