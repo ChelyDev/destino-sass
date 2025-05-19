@@ -46,14 +46,52 @@ header .search {
 }
 header .search h2 {
   color: #F2F4F5;
+  display: flex;
+  gap: center;
+  justify-content: center;
+  align-items: center;
 }
 header .search form {
   background-color: white;
   border-radius: 8px;
+  display: flex;
+  gap: center;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-top: 15px;
+}
+header .search input {
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
+  border: none;
+  margin-right: 300px;
+}
+header .search button {
+  width: 231px;
+  height: 48px;
+  top: 254px;
+  left: 1136px;
+  border-radius: 8px;
+  width: 232px;
+  height: 60px;
+  background-color: black;
+}
+header .search button span {
+  color: white;
+  font-family: Rubik;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  text-align: center;
 }
 header img {
   width: 232px;
   height: 60px;
+  margin-top: 10px;
 }
 
 main h1 {
@@ -149,5 +187,23 @@ main .state .cards .card .card-content a span {
 }
 .overview .content .items .item p:nth-child(2) {
   font-size: 2.4rem;
+  color: #716C7C;
+}
+
+footer li {
+  width: 202px;
+  height: 32px;
+  top: 2410px;
+  left: 38px;
+}
+footer .navs {
+  display: block;
+}
+footer .navs nav h2 {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+footer .navs nav a {
+  font-size: 2rem;
   color: #716C7C;
 }/*# sourceMappingURL=style.css.map */
