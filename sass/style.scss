@@ -82,7 +82,7 @@ header{
             background-color: black;
 
                 span{
-                    color: white;
+                    color: var.$background;
                     font-family: Rubik;
                     font-weight: 500;
                     font-size: 16px;
@@ -125,7 +125,7 @@ main{
 
                 .card-content{
                     padding: 24px;
-                    background-color: white;
+                    background-color: var.$background;
 
                     p{
                         &:first-child{
@@ -193,11 +193,30 @@ main{
     }
 
     .content{
-        background-color: white;
+        background-color: var.$background;
         border: 1px solid var.$border;
         border-radius: 8px;
         padding: 54px;
 
+        .apps{
+            flex-basis: 200px;
+            flex-grow: 0;
+            flex-shrink: 0;
+            margin-right: 40px;
+            background-color: aqua;
+        }
+
+        ul{
+            @include mx.displayFlex(20px);
+            padding: 0;
+            margin: 0;
+            flex-direction: column;
+        }
+
+        li{
+            @include mx.displayFlex(8px);
+            align-items: center;
+        }
         .items{
             @include mx.displayFlex(100px, space-evenly);
             text-align: center;
@@ -212,6 +231,7 @@ main{
                     font-size: 2.4rem;
                     color: var.$gray;
                 }
+
             }
         }
 
@@ -219,31 +239,33 @@ main{
     }
 }
 
-footer{
-    
-    li{
-        width: 202px;
-        height: 32px;
-        top: 2410px;
-        left: 38px;        
-    }
+.navs{
+    @include mx.displayFlex(46px);
+    align-items: flex-start;
+   
+    nav{
+        margin-right: 50px;
 
-    .navs{
-        display: block;
-        nav{
-        
-            h2{
-                font-weight: bold;
-                margin-bottom: 4px;
-            }
-    
-            a{
-
-                font-size:2rem;
-                color: var.$gray;
-            }
-
+        h4{
+            margin-bottom: 20px;
         }
-       
+    
+        a{
+            color: var.$gray;
+            display: block;
+            margin-bottom: 8px;
+        }
+
     }
+
 }
+
+.copyright{
+    padding-bottom: 20px;
+
+        small{
+            color: var.$gray;
+    }
+
+}
+
